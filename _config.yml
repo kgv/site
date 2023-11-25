@@ -1,14 +1,13 @@
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Minimal Mistakes"
+title                    : "Kazakov Giorgi"
 title_separator          : "-"
-subtitle                 : "A Jekyll theme"
-name                     : &name "Michael Rose" # &name is a YAML anchor which can be *referenced later
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+subtitle                 : "Laboratory work at the Timiryazev Institute of Plant Physiology Russian Academy of Sciences"
+name                     : &name "Kazakov Giorgi" # &name is a YAML anchor which can be *referenced later
+description              : &description "Laboratory work at the Timiryazev Institute of Plant Physiology Russian Academy of Sciences."
 url                      : https://kgv.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/site" # the subpath of your site, e.g. "/blog"
 repository               : "kgv/site"
@@ -45,6 +44,16 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+# search                   : true # true, false (default)
+# search_full_content      : true # true, false (default)
+# search_provider          : algolia # lunr (default), algolia
+# algolia:
+#   application_id         : QB6HVGBSBA # YOUR_APPLICATION_ID
+#   index_name             : minimal_mistakes # YOUR_INDEX_NAME
+#   search_only_api_key    : 9d5014e5bbc77372547bce778dfa5663 # YOUR_SEARCH_ONLY_API_KEY
+#   powered_by             : true # true (default), false
+#   files_to_exclude:
+#     - _posts/2017-11-28-post-exclude-search.md
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : algolia # lunr (default), algolia
@@ -91,9 +100,9 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
-  location         : "Buffalo, NY"
+  location         : "Russia, Moscow"
   links:
     - label: "Made Mistakes"
       icon: "fas fa-fw fa-link"
@@ -103,7 +112,7 @@ author:
       url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
+      url: "https://github.com/kgv"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/mmistakes"
