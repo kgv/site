@@ -228,7 +228,6 @@ defaults:
       type: experiments
     values:
       layout: single
-      author_profile: false
       share: true
   # _methods
   - scope:
@@ -236,9 +235,7 @@ defaults:
       type: methods
     values:
       layout: single
-      author_profile: true
       share: true
-      comments: true
 
 
 # Sass/SCSS
