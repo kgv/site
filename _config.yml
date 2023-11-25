@@ -183,16 +183,12 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path/
-  recipes:
+  experiments:
     output: true
     permalink: /:collection/:path/
-  pets:
+  methods:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
 
 # Defaults
 defaults:
@@ -226,32 +222,23 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # _recipes
+  # _experiments
   - scope:
       path: ""
-      type: recipes
+      type: experiments
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _methods
+  - scope:
+      path: ""
+      type: methods
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _pets
-  - scope:
-      path: ""
-      type: pets
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
 
 
 # Sass/SCSS
