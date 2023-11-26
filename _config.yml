@@ -1,15 +1,18 @@
-remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Settings
+name: &name "Kazakov Giorgi Valadimirovich"
+laboratory: &laboratory "Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences"
+description: &description "Laboratory work at the" *laboratory
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Kazakov Giorgi"
+title                    : *name
 title_separator          : "-"
-subtitle                 : "Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences"
-name                     : &name "Kazakov Giorgi" # &name is a YAML anchor which can be *referenced later
-description              : &description "Laboratory work at the Laboratory of Lipid Metabolism at the Timiryazev Institute of Plant Physiology Russian Academy of Sciences."
-url                      : https://kgv.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/site" # the subpath of your site, e.g. "/blog"
+subtitle                 : *laboratory
+url                      : https://kgv.github.io # the base hostname & protocol for your site
+baseurl                  : "/site" # the subpath of your site
 repository               : "kgv/site"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -65,9 +68,9 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : &twitter "mmistakes"
+  username               : &twitter "kgv"
 facebook:
-  username               : &facebook "michaelrose"
+  username               : &facebook "kgv"
   app_id                 :
   publisher              :
 og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
@@ -77,8 +80,8 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/mmistakes"
-    - "https://www.facebook.com/michaelrose"
+    - "https://twitter.com/kgv"
+    - "https://www.facebook.com/kgv"
 
 # Analytics
 analytics:
@@ -87,12 +90,11 @@ analytics:
     tracking_id          : "UA-2011187-3" # Replace this with your ID, or delete
     anonymize_ip         : true
 
-
 # Site Author
 author:
-  name: *name # *name is a YAML reference pointing to the &anchor earlier
+  name: *name
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences."
+  bio: "Software Engineer at the" *laboratory
   location: "Russia, Moscow"
   links:
     - label: "Web"
@@ -104,7 +106,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kgv"
-
 
 # Site Footer
 footer:
@@ -225,7 +226,8 @@ defaults:
       type: experiments
     values:
       layout: single
-      classes: wide
+      # classes: wide
+      entries_layout: grid
       share: true
   # _methods
   - scope:
@@ -233,9 +235,12 @@ defaults:
       type: methods
     values:
       layout: single
-      classes: wide
+      toc: true
+      toc_label: "Table of Contents"
+      toc_icon: "cog"
+      toc_sticky: true
+      author_profile: true
       share: true
-
 
 # Sass/SCSS
 sass:
