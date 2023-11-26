@@ -1,4 +1,4 @@
-# main links
+# main navigation
 main:
   - title: "About"
     url: /about/
@@ -6,11 +6,8 @@ main:
     url: /year-archive/
   - title: "Collections"
     url: /collection-archive/
-  - title: "Terms"
-    url: /terms/
 
-
-# documentation links
+# documentation navigation
 docs:
   - title: Getting Started
     children:
@@ -66,12 +63,3 @@ docs:
         url: /docs/license/
       - title: "Terms &amp; Privacy Policy"
         url: /terms/
-
-# method table of contents
-method:
-  - title: "Methods"
-    children:
-      - title: "Рективы"
-        url: "./#рективы"
-      - title: "Лабораторный протокол"
-        url: "./#лабораторный-протокол"

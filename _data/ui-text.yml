@@ -1,0 +1,17 @@
+en: &EN
+  categories_label: "Категории"
+  date_label: "Date"
+  experiment_label: "Experiment"
+  links_label: "Links"
+  method_label: "Method"
+  related_label: "Related"
+  tags_label: "Tags"
+
+ru:
+  categories_label: "Категории"
+  date_label: "Дата"
+  experiment_label: "Эксперимент"
+  links_label: "Ссылки"
+  method_label: "Метод"
+  related_label: "Связанное"
+  tags_label: "Таги"
