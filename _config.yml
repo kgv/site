@@ -5,9 +5,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Kazakov Giorgi"
 title_separator          : "-"
-subtitle                 : "Laboratory work at the Timiryazev Institute of Plant Physiology Russian Academy of Sciences"
+subtitle                 : "Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences"
 name                     : &name "Kazakov Giorgi" # &name is a YAML anchor which can be *referenced later
-description              : &description "Laboratory work at the Timiryazev Institute of Plant Physiology Russian Academy of Sciences."
+description              : &description "Laboratory work at the Laboratory of Lipid Metabolism at the Timiryazev Institute of Plant Physiology Russian Academy of Sciences."
 url                      : https://kgv.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/site" # the subpath of your site, e.g. "/blog"
 repository               : "kgv/site"
@@ -44,16 +44,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-# search                   : true # true, false (default)
-# search_full_content      : true # true, false (default)
-# search_provider          : algolia # lunr (default), algolia
-# algolia:
-#   application_id         : QB6HVGBSBA # YOUR_APPLICATION_ID
-#   index_name             : minimal_mistakes # YOUR_INDEX_NAME
-#   search_only_api_key    : 9d5014e5bbc77372547bce778dfa5663 # YOUR_SEARCH_ONLY_API_KEY
-#   powered_by             : true # true (default), false
-#   files_to_exclude:
-#     - _posts/2017-11-28-post-exclude-search.md
+
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : algolia # lunr (default), algolia
@@ -99,37 +90,34 @@ analytics:
 
 # Site Author
 author:
-  name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
-  location         : "Russia, Moscow"
+  name: *name # *name is a YAML reference pointing to the &anchor earlier
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences."
+  location: "Russia, Moscow"
   links:
-    - label: "Made Mistakes"
+    - label: "Web"
       icon: "fas fa-fw fa-link"
-      url: "https://mademistakes.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+      url: "https://kgv.github.io/site"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:kazakov.giorgi.valadimirovich@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kgv"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
 
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+    - label: "Web"
+      icon: "fas fa-fw fa-link"
+      url: "https://kgv.github.io/site"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:kazakov.giorgi.valadimirovich@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
 
 
 # Reading Files
@@ -237,6 +225,7 @@ defaults:
       type: experiments
     values:
       layout: single
+      classes: wide
       share: true
   # _methods
   - scope:
@@ -244,6 +233,7 @@ defaults:
       type: methods
     values:
       layout: single
+      classes: wide
       share: true
 
 
