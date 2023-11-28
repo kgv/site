@@ -1,8 +1,0 @@
-{% if page.references %}
-  <header><h2>{{ site.data.ui-text[site.locale].references | default: "References" }}</h2></header>
-  <ul>
-  {% for reference in page.references %}
-    <li><a href="{{ reference.url }}"><i class="fas fa-link" aria-hidden="true"></i> {{ reference.name }}</a></li>
-  {% endfor %}
-  </ul>
-{% endif %}

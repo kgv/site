@@ -1,0 +1,15 @@
+{% if site.tag_archive.type and page.tags[0] %}
+  {% include single/page__tags.liquid %}
+{% endif %}
+
+{% if site.category_archive.type and page.categories[0] %}
+  {% include single/page__categories.liquid %}
+{% endif %}
+
+{% assign date_format = site.date_format | default: "%d.%m.%Y" %}
+{% if page.date %}
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date | default: "Date" }}:</strong> <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time></p>
+  {% if page.updated %}
+    <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].updated | default: "Updated" }}:</strong> <time class="dt-published" datetime="{{ page.updated | date: '%Y-%m-%d' }}">{{ page.updated | date: date_format }}</time></p>
+  {% endif %}
+{% endif %}
