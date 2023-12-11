@@ -3,8 +3,8 @@ layout: splash
 permalink: /
 hidden: true
 header:
-  overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_color: "#5e616c"
   actions:
     - label: "<i class='fas fa-download'></i> Try now"
       url: "https://ippras.github.io/utca"
@@ -12,30 +12,24 @@ header:
     - label: "<i class='fas fa-download'></i> Try now"
       url: "https://ippras.github.io/utca"
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
+  Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences.<br />
   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
-feature_row:
+collections:
   - image_path: /assets/images/mm-customizable-feature.png
+    alt: "projects"
+    title: "Projects"
+    excerpt: "Projects I'm working on."
+    url: "/projects/"
+  - image_path: /assets/images/mm-responsive-feature.png
     alt: "methods"
     title: "Methods"
-    excerpt: "Methods. Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
+    excerpt: "Methodological guidelines for the procedures used in the posts."
     url: "/methods/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
   - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% free"
+    alt: "publications"
+    title: "Publications"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    url: "/publications/"
 ---
 
-{% include feature_row.liquid %}
+{% include rows/collections.liquid id="collections" %}
