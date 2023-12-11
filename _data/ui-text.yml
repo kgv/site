@@ -1,5 +1,5 @@
 en: &EN
-  categories: "Категории"
+  categories: "Categories"
   contacts: "Contacts"
   date: "Date"
   experiment: "Experiment"
@@ -12,6 +12,7 @@ en: &EN
   related: "Related"
   share_on: "Share on"
   share: "Share"
+  table_of_contents: "Table of contents"
   tags: "Tags"
   updated: "Updated"
 
@@ -30,5 +31,6 @@ ru:
   related: "Связанное"
   share_on: "Поделиться на"
   share: "Поделиться"
+  table_of_contents: "Оглавление"
   tags: "Таги"
   updated: "Обновлено"

@@ -14,6 +14,7 @@ utca_gallery:
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
 toc: true
+toc_label: "Table of Contents"
 ---
 
 Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences.
