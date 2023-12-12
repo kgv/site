@@ -7,10 +7,8 @@
 <div class="feature__wrapper">
   {% for feature in features %}
     <!-- reference -->
-    {% if feature.path %}
-      {% assign reference = feature.path | relative_url %}
-    {% else %}
-      {% assign reference = feature.url %}
+    {% if feature.reference %}
+      {% assign reference = feature.reference | relative_url %}
     {% endif %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
@@ -26,7 +24,10 @@
 
         {% if feature.image.path %}
           <div class="archive__item-teaser">
-            <img src="{{ feature.image.path | relative_url }}" {% if feature.alt %}alt="{{ feature.image.alt }}"{% endif %}>
+            {% capture image %}
+              <img src="{{ feature.image.path | relative_url }}" {% if feature.alt %}alt="{{ feature.image.alt }}"{% endif %}>
+            {% endcapture %}
+            {% if reference %}<a href="{{ reference }}">{% endif %}{{ image }}{% if reference %}</a>{% endif %}
             {% if feature.image.caption %}
               <span class="archive__item-caption">{{ feature.image.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
             {% endif %}
@@ -43,10 +44,8 @@
 
         {% if feature.button %}
           <!-- reference -->
-          {% if feature.button.path %}
-            {% assign reference = feature.button.path | relative_url %}
-          {% elsif feature.button.url %}
-            {% assign reference = feature.button.url %}
+          {% if feature.button.reference %}
+            {% assign reference = feature.button.reference | relative_url %}
           {% endif %}
           <p><a href="{{ reference }}" class="btn {{ feature.button.class | default: 'btn--light-outline' }}">{{ feature.button.text | default: site.data.ui-text[site.locale].more | default: "More" }}</a></p>
         {% endif %}

@@ -15,29 +15,24 @@ excerpt: >
   Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences.<br />
   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
 collections:
-  - image:
+  - reference: "/projects/"
+    image:
       path: /assets/images/mm-customizable-feature.png
       alt: "projects"
     title: "Projects"
     excerpt: "Projects I'm working on."
-    path: "/projects/"
-  - image:
+  - reference: "/methods/"
+    image:
       path: /assets/images/mm-responsive-feature.png
       alt: "methods"
     title: "Methods"
     excerpt: "Methodological guidelines for the procedures used in the posts."
-    button:
-      path: "/methods/"
-    path: "/methods/"
-  - image:
+  - reference: "/publications/"
+    image:
       path: /assets/images/mm-free-feature.png
       alt: "publications"
     title: "Publications"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    button:
-      path: "/publications/"
-      class: "btn--primary"
-    path: "https://ippras.github.io/utca"
 ---
 
 {% include rows/features.liquid id="collections" %}
