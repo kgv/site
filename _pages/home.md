@@ -35,4 +35,4 @@ collections:
     url: "/publications/"
 ---
 
-{% include rows/images.liquid id="collections" %}
+{% include rows/images.liquid id="collections" type="center" %}
