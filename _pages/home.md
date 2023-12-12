@@ -35,4 +35,4 @@ collections:
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
 ---
 
-{% include rows/features.liquid id="collections" %}
+{% include features.liquid id="collections" %}
