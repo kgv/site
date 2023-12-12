@@ -3,7 +3,8 @@ layout: collection
 title: "Methods"
 collection: methods
 permalink: /methods/
-author_profile: false
+sidebar:
+  nav: "collections"
 classes: wide
 ---
 

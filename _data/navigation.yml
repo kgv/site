@@ -17,6 +17,16 @@ posts:
       - title: "Tags"
         url: /tags/
 
+collections:
+  - title: "Collections"
+    children:
+      - title: "Methods"
+        url: /methods/
+      - title: "Projects"
+        url: /projects/
+      - title: "Publications"
+        url: /publications/
+
 # documentation navigation
 docs:
   - title: Getting Started

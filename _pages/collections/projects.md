@@ -3,7 +3,8 @@ layout: collection
 title: "Projects"
 collection: projects
 permalink: /projects/
-# author_profile: false
+sidebar:
+  nav: "collections"
 classes: wide
 entries_layout: grid
 ---
