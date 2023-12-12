@@ -4,15 +4,15 @@ title: "About"
 excerpt: "Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences."
 update: 2023-05-27T11:59:26-04:00
 utca_screenshots:
-  - url: /assets/images/mm-layout-splash.png
-    image_path: /assets/images/mm-layout-splash.png
-    alt: "splash layout example"
-  - url: /assets/images/mm-layout-single-meta.png
-    image_path: /assets/images/mm-layout-single-meta.png
-    alt: "single layout with comments and related posts"
-  - url: /assets/images/mm-layout-archive.png
-    image_path: /assets/images/mm-layout-archive.png
-    alt: "archive layout example"
+  - image:
+      path: /assets/images/mm-layout-splash.png
+      alt: "splash layout example"
+  - image:
+      path: /assets/images/mm-layout-single-meta.png
+      alt: "single layout with comments and related posts"
+  - image:
+      path: /assets/images/mm-layout-archive.png
+      alt: "archive layout example"
 toc: true
 toc_label: "Table of Contents"
 ---
@@ -23,7 +23,7 @@ Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev Institute of
 
 ### UTCA (Universal TAG Calculation Application)
 
-{% include figures id="utca_screenshots" caption="UTCA screenshots." %}
+{% include figures.liquid id="utca_screenshots" caption="UTCA screenshots." %}
 
 [Try now](https://ippras.github.io/utca){: .btn .btn--success .btn--large target="_blank"}
 
