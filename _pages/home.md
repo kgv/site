@@ -15,21 +15,24 @@ excerpt: >
   Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev Institute of Plant Physiology, Russian Academy of Sciences.<br />
   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</a></small>
 collections:
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "projects"
+  - image:
+      path: /assets/images/mm-customizable-feature.png
+      alt: "projects"
     title: "Projects"
     excerpt: "Projects I'm working on."
     url: "/projects/"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "methods"
+  - image:
+      path: /assets/images/mm-responsive-feature.png
+      alt: "methods"
     title: "Methods"
     excerpt: "Methodological guidelines for the procedures used in the posts."
     url: "/methods/"
-  - image_path: /assets/images/mm-free-feature.png
-    alt: "publications"
+  - image:
+      path: /assets/images/mm-free-feature.png
+      alt: "publications"
     title: "Publications"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
     url: "/publications/"
 ---
 
-{% include rows/collections.liquid id="collections" %}
+{% include rows/images.liquid id="collections" %}
