@@ -3,15 +3,18 @@ main:
   - title: "About"
     url: /about/
   - title: Posts
-    children:
-      - title: "By category"
-        url: /posts_by_category/
-      - title: "By tag"
-        url: /posts_by_tag/
-      - title: "By year"
-        url: /posts_by_year/
+    url: /posts_by_year/
   - title: "Collections"
-    url: /collection-archive/
+    url: /collections/
+
+posts_by:
+  - title: "Posts by"
+  - title: "Category"
+    url: /posts_by_category/
+  - title: "Tag"
+    url: /posts_by_tag/
+  - title: "Year"
+    url: /posts_by_year/
 
 # documentation navigation
 docs:
