@@ -5,14 +5,11 @@ excerpt: "Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev In
 update: 2023-05-27T11:59:26-04:00
 utca_screenshots:
   - image:
-      path: /assets/images/mm-layout-splash.png
-      alt: "splash layout example"
+      path: /assets/utca/screenshots/0.jpg
   - image:
-      path: /assets/images/mm-layout-single-meta.png
-      alt: "single layout with comments and related posts"
+      path: /assets/utca/screenshots/1.jpg
   - image:
-      path: /assets/images/mm-layout-archive.png
-      alt: "archive layout example"
+      path: /assets/utca/screenshots/2.jpg
 toc: true
 toc_label: "Table of Contents"
 ---
@@ -21,12 +18,20 @@ Software Engineer at the Laboratory of Lipid Metabolism, Timiryazev Institute of
 
 ## Projects
 
-### UTCA (Universal TAG Calculation Application)
+### UTCA
 
-{% include figures.liquid id="utca_screenshots" caption="UTCA screenshots." %}
+{% include figures.liquid id="utca_screenshots" %}
+
+Universal TAG Calculation Application.
 
 [Try now](https://ippras.github.io/utca){: .btn .btn--success .btn--large target="_blank"}
 
----
+***
 
-Minimal Mistakes is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.
+### Atom
+
+The library provides an abstraction over chemical elements. It contains data on *relative atomic masses*, *standard atomic weight* including isotopes.
+
+[GitHub](https://github.com/ippras/atom){: .btn .btn--success .btn--large target="_blank"}
+
+***
