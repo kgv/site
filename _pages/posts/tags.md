@@ -1,8 +1,8 @@
 ---
 layout: tags
-permalink: /posts_by_tag/
+permalink: /tags/
 title: "Posts by tag"
 sidebar:
-  nav: "posts_by"
+  nav: "posts"
 author_profile: true
 ---

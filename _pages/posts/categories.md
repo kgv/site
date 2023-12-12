@@ -1,8 +1,8 @@
 ---
 layout: categories
-permalink: /posts_by_category/
+permalink: /categories/
 title: "Posts by category"
 sidebar:
-  nav: "posts_by"
+  nav: "posts"
 author_profile: true
 ---
