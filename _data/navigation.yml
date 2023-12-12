@@ -2,8 +2,14 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Posts"
-    url: /year-archive/
+  - title: Posts
+    children:
+      - title: "By category"
+        url: /posts_by_category/
+      - title: "By tag"
+        url: /posts_by_tag/
+      - title: "By year"
+        url: /posts_by_year/
   - title: "Collections"
     url: /collection-archive/
 
