@@ -1,40 +1,34 @@
-/*!
- * Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
- * Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
- * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
-*/
-
 /* Variables */
-@import "minimal-mistakes/variables";
+@import "ninth/variables";
 
 /* Mixins and functions */
-@import "minimal-mistakes/vendor/breakpoint/breakpoint";
+@import "ninth/vendor/breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
-@import "minimal-mistakes/vendor/magnific-popup/magnific-popup"; // Magnific Popup
-@import "minimal-mistakes/vendor/susy/susy";
-@import "minimal-mistakes/mixins";
+@import "ninth/vendor/magnific-popup/magnific-popup"; // Magnific Popup
+@import "ninth/vendor/susy/susy";
+@import "ninth/mixins";
 
 /* Core CSS */
-@import "minimal-mistakes/reset";
-@import "minimal-mistakes/base";
-@import "minimal-mistakes/forms";
-@import "minimal-mistakes/tables";
-@import "minimal-mistakes/animations";
+@import "ninth/reset";
+@import "ninth/base";
+@import "ninth/forms";
+@import "ninth/tables";
+@import "ninth/animations";
 
 /* Components */
-@import "minimal-mistakes/buttons";
-@import "minimal-mistakes/notices";
-@import "minimal-mistakes/masthead";
-@import "minimal-mistakes/navigation";
-@import "minimal-mistakes/footer";
-@import "minimal-mistakes/search";
-@import "minimal-mistakes/syntax";
+@import "ninth/buttons";
+@import "ninth/notices";
+@import "ninth/masthead";
+@import "ninth/navigation";
+@import "ninth/footer";
+@import "ninth/search";
+@import "ninth/syntax";
 
 /* Utility classes */
-@import "minimal-mistakes/utilities";
+@import "ninth/utilities";
 
 /* Layout specific */
-@import "minimal-mistakes/page";
-@import "minimal-mistakes/archive";
-@import "minimal-mistakes/sidebar";
-@import "minimal-mistakes/print";
+@import "ninth/page";
+@import "ninth/archive";
+@import "ninth/sidebar";
+@import "ninth/print";

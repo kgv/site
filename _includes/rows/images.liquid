@@ -9,13 +9,13 @@
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
         {% if feature.title %}
-          <h2 class="archive__item-title">
-            {% if feature.url %}
-              <a href="{{ feature.url | relative_url }}">{{ feature.title }}</a>
-            {% else %}
-              {{ feature.title }}
-            {% endif %}
-          </h2>
+            <h2 class="archive__item-title">
+              {% if feature.url %}
+                <a href="{{ feature.url | relative_url }}">{{ feature.title }}</a>
+              {% else %}
+                {{ feature.title }}
+              {% endif %}
+            </h2>
         {% endif %}
 
         {% if feature.image.path %}
