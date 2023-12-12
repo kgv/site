@@ -6,32 +6,50 @@
 
 <div class="feature__wrapper">
   {% for feature in features %}
+    <!-- reference -->
+    {% if feature.path %}
+      {% assign reference = feature.path | relative_url %}
+    {% else %}
+      {% assign reference = feature.url %}
+    {% endif %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
-        {% if feature.image_path %}
+        {% if feature.title %}
+          <h2 class="archive__item-title">
+            {% if reference %}
+              <a href="{{ reference }}">{{ feature.title }}</a>
+            {% else %}
+              {{ feature.title }}
+            {% endif %}
+          </h2>
+        {% endif %}
+
+        {% if feature.image.path %}
           <div class="archive__item-teaser">
-            <img src="{{ feature.image_path | relative_url }}" alt="{% if feature.alt %}{{ feature.alt }}{% endif %}">
-            {% if feature.image_caption %}
-              <span class="archive__item-caption">{{ feature.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            <img src="{{ feature.image.path | relative_url }}" {% if feature.alt %}alt="{{ feature.image.alt }}"{% endif %}>
+            {% if feature.image.caption %}
+              <span class="archive__item-caption">{{ feature.image.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
             {% endif %}
           </div>
         {% endif %}
 
         <div class="archive__item-body">
-          {% if feature.title %}
-            <h2 class="archive__item-title">{{ feature.title }}</h2>
-          {% endif %}
-
           {% if feature.excerpt %}
             <div class="archive__item-excerpt">
               {{ feature.excerpt | markdownify }}
             </div>
           {% endif %}
-
-          {% if feature.url %}
-            <p><a href="{{ feature.url | relative_url }}" class="btn {{ feature.btn_class }}">{{ feature.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
-          {% endif %}
         </div>
+
+        {% if feature.button %}
+          <!-- reference -->
+          {% if feature.button.path %}
+            {% assign reference = feature.button.path | relative_url %}
+          {% elsif feature.button.url %}
+            {% assign reference = feature.button.url %}
+          {% endif %}
+          <p><a href="{{ reference }}" class="btn {{ feature.button.class | default: 'btn--light-outline' }}">{{ feature.button.text | default: site.data.ui-text[site.locale].more | default: "More" }}</a></p>
+        {% endif %}
       </div>
     </div>
   {% endfor %}

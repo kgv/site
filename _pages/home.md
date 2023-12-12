@@ -20,19 +20,24 @@ collections:
       alt: "projects"
     title: "Projects"
     excerpt: "Projects I'm working on."
-    url: "/projects/"
+    path: "/projects/"
   - image:
       path: /assets/images/mm-responsive-feature.png
       alt: "methods"
     title: "Methods"
     excerpt: "Methodological guidelines for the procedures used in the posts."
-    url: "/methods/"
+    button:
+      path: "/methods/"
+    path: "/methods/"
   - image:
       path: /assets/images/mm-free-feature.png
       alt: "publications"
     title: "Publications"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/publications/"
+    button:
+      path: "/publications/"
+      class: "btn--primary"
+    path: "https://ippras.github.io/utca"
 ---
 
-{% include rows/images.liquid id="collections" %}
+{% include rows/features.liquid id="collections" %}
