@@ -192,6 +192,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -246,6 +249,13 @@ defaults:
       toc_icon: "cog"
       toc_sticky: true
       author_profile: true
+      share: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
       share: true
 
 # Sass/SCSS
