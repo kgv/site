@@ -2,6 +2,7 @@ en: &EN
   categories: "Categories"
   contacts: "Contacts"
   date: "Date"
+  doi: "DOI"
   experiment: "Experiment"
   feed: "Feed"
   links: "Links"
@@ -21,6 +22,7 @@ ru:
   categories: "Категории"
   contacts: "Контакты"
   date: "Дата"
+  doi: "DOI"
   experiment: "Эксперимент"
   feed:
   follow: "Отслеживать"

@@ -256,6 +256,8 @@ defaults:
       type: publications
     values:
       layout: single
+      # classes: wide
+      author_profile: true
       share: true
 
 # Sass/SCSS

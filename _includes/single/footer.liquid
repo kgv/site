@@ -6,10 +6,27 @@
   {% include single/page__categories.liquid %}
 {% endif %}
 
+{% if page.authors %}
+  <strong><i class="fas fa-fw fa-id-card" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].authors | default: "Authors" }}:</strong> {{ page.authors | join: ", " }}
+{% endif %}
+
+{% if page.doi %}
+  <p class="page__taxonomy">
+    <strong><i class="ai ai-doi" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].doi | default: "DOI" }}:</strong><a href="https://doi.org/{{ page.doi }}" target="_blank" title="{{ page.doi }}"> {{ page.doi }}</a>
+  </p>
+{% endif %}
+
 {% assign date_format = site.date_format | default: "%d.%m.%Y" %}
 {% if page.date %}
   <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date | default: "Date" }}:</strong> <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time></p>
   {% if page.updated %}
     <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].updated | default: "Updated" }}:</strong> <time class="dt-published" datetime="{{ page.updated | date: '%Y-%m-%d' }}">{{ page.updated | date: date_format }}</time></p>
   {% endif %}
+{% endif %}
+
+{% if page.part_of %}
+  <p class="page__taxonomy"></p>
+    <strong><i class="fas fa-fw fa-link"></i> <a href="{{ page.part_of.path | relative_url }}" target="_blank">{{ page.part_of.title }}</a></strong>
+    {%- if page.part_of.place %}, {{ page.part_of.place }}{% endif %}{% if page.part_of.publisher %}, {{ page.part_of.publisher }}{% endif %}{% if page.part_of.date %}, {{ page.part_of.date }}{% endif %}{% if page.part_of.pages %}, {{ page.part_of.pages }}{% endif %}
+  </p>
 {% endif %}
